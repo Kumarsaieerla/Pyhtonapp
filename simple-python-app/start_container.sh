@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
+docker pull saieerla/simple-python-app:latest
 
-# Pull the Docker image from Docker Hub
-echo
+docker run -d -p 5000:5000 saieerla/simple-python-app:latest
 
-# Run the Docker image as a container
-echo
+echo "sucessfullly docker image running"
